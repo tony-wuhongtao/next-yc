@@ -1,0 +1,562 @@
+[
+    {
+    "id": 1,
+    "text": "电话铃响的时候，你会",
+    "options": [
+        {"text": "马上第一个去接", "dimension": "E"},
+        {"text": "希望别人去接", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 2,
+    "text": "你更倾向于",
+    "options": [
+        {"text": "敏锐而不内省", "dimension": "S"},
+        {"text": "内省而不敏锐", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 3,
+    "text": "对你来说哪种情况更糟糕",
+    "options": [
+        {"text": "想入非非", "dimension": "N"},
+        {"text": "循规导距", "dimension": "S"}
+    ]
+    },
+    {
+    "id": 4,
+    "text": "同别人在一起，你通常",
+    "options": [
+        {"text": "坚定而不随和", "dimension": "T"},
+        {"text": "随和而不坚定", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 5,
+    "text": "哪种事更使你感到惬意",
+    "options": [
+        {"text": "做出权威判断", "dimension": "T"},
+        {"text": "做出有价值的判断", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 6,
+    "text": "面对工作环境里的噪音，你会",
+    "options": [
+        {"text": "抽出时间整顿", "dimension": "J"},
+        {"text": "最大限度地忍耐", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 7,
+    "text": "你的做事方式",
+    "options": [
+        {"text": "果断", "dimension": "J"},
+        {"text": "某种程度的斟酌", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 8,
+    "text": "排队时，你常常",
+    "options": [
+        {"text": "与他人了聊天", "dimension": "E"},
+        {"text": "仍考虑工作", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 9,
+    "text": "你更倾向于",
+    "options": [
+        {"text": "感知多于设想", "dimension": "S"},
+        {"text": "设想多于感知", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 10,
+    "text": "你对什么更感兴趣",
+    "options": [
+        {"text": "真实存在的东西", "dimension": "S"},
+        {"text": "潜在的东西", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 11,
+    "text": "你更有可能依据什么对事件做出判断",
+    "options": [
+        {"text": "事实", "dimension": "T"},
+        {"text": "愿望", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 12,
+    "text": "评价他人时，你易于",
+    "options": [
+        {"text": "客观，不讲人情", "dimension": "T"},
+        {"text": "友好，有人情味", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 13,
+    "text": "你希望通过什么方式制定合同",
+    "options": [
+        {"text": "签字、盖章、发送", "dimension": "J"},
+        {"text": "握手搞定", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 14,
+    "text": "你更愿意拥有",
+    "options": [
+        {"text": "工作成果", "dimension": "J"},
+        {"text": "不断进展的工作", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 15,
+    "text": "在一个聚会上，你倾向",
+    "options": [
+        {"text": "与许多人包括陌生人交流", "dimension": "E"},
+        {"text": "只与几个朋友交流", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 16,
+    "text": "你更倾向于",
+    "options": [
+        {"text": "务实而不空谈", "dimension": "S"},
+        {"text": "空谈而不务实", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 17,
+    "text": "你喜欢什么样的作者",
+    "options": [
+        {"text": "直述主题", "dimension": "S"},
+        {"text": "运用隐喻和象征手法", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 18,
+    "text": "什么更吸引你",
+    "options": [
+        {"text": "思想和谐", "dimension": "T"},
+        {"text": "关系和睦", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 19,
+    "text": "如果一定要使某人失望，你通常",
+    "options": [
+        {"text": "坦率、直言不讳", "dimension": "T"},
+        {"text": "温和、体谅他人", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 20,
+    "text": "工作中，你希望你的行动进度",
+    "options": [
+        {"text": "确定", "dimension": "J"},
+        {"text": "不确定", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 21,
+    "text": "你更经常提出",
+    "options": [
+        {"text": "最后、确定的意见", "dimension": "J"},
+        {"text": "暂、初步的意见", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 22,
+    "text": "与陌生人交流",
+    "options": [
+        {"text": "使你更加自信", "dimension": "E"},
+        {"text": "使你伤脑筋", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 23,
+    "text": "事实",
+    "options": [
+        {"text": "只能说明事实", "dimension": "S"},
+        {"text": "是理论的例证", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 24,
+    "text": "你觉得幻想家和理论家",
+    "options": [
+        {"text": "有些讨厌", "dimension": "S"},
+        {"text": "非常有魅力", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 25,
+    "text": "在一场热烈的讨论中，你会",
+    "options": [
+        {"text": "坚持你的观点", "dimension": "T"},
+        {"text": "寻找共同之处", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 26,
+    "text": "哪一个更好",
+    "options": [
+        {"text": "公正", "dimension": "T"},
+        {"text": "宽容", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 27,
+    "text": "你觉得工作中什么更自然",
+    "options": [
+        {"text": "指出错误", "dimension": "T"},
+        {"text": "设法取悦他人", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 28,
+    "text": "什么时候你感觉更惬意",
+    "options": [
+        {"text": "做出决定之后", "dimension": "J"},
+        {"text": "做出决定之前", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 29,
+    "text": "你倾向于",
+    "options": [
+        {"text": "直接说出你的想法", "dimension": "E"},
+        {"text": "听别人发言", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 30,
+    "text": "常识",
+    "options": [
+        {"text": "通常是可靠的", "dimension": "S"},
+        {"text": "经常值得怀疑", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 31,
+    "text": "儿童往往不会",
+    "options": [
+        {"text": "做十分有用的事", "dimension": "S"},
+        {"text": "充分利用想象力", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 32,
+    "text": "管理他人时，你更倾向于",
+    "options": [
+        {"text": "坚定而严格", "dimension": "T"},
+        {"text": "宽厚仁慈", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 33,
+    "text": "你更倾向于作为一个",
+    "options": [
+        {"text": "头脑冷静的人", "dimension": "T"},
+        {"text": "热心肠的人", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 34,
+    "text": "你倾向于",
+    "options": [
+        {"text": "将事情办妥", "dimension": "J"},
+        {"text": "探究事物的各种潜质", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 35,
+    "text": "在多数情况下，你更",
+    "options": [
+        {"text": "做作而不自然", "dimension": "E"},
+        {"text": "自然而不做作", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 36,
+    "text": "你认为自己是一个",
+    "options": [
+        {"text": "外向的人", "dimension": "E"},
+        {"text": "自闭的人", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 37,
+    "text": "你更经常是一个",
+    "options": [
+        {"text": "讲求实际的人", "dimension": "S"},
+        {"text": "沉于幻想的人", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 38,
+    "text": "你说话时",
+    "options": [
+        {"text": "详细而不泛泛", "dimension": "S"},
+        {"text": "泛泛而不详细", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 39,
+    "text": "哪句话更象是赞美",
+    "options": [
+        {"text": "这是一具逻辑性强的人", "dimension": "T"},
+        {"text": "这是一个情感丰富的人", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 40,
+    "text": "你更易受什么支配",
+    "options": [
+        {"text": "你的思想", "dimension": "N"},
+        {"text": "你的体验", "dimension": "S"}
+    ]
+    },
+    {
+    "id": 41,
+    "text": "当一个工作完成时，你喜欢",
+    "options": [
+        {"text": "把所有未了结的零星事务安排妥当", "dimension": "J"},
+        {"text": "继续干别的事", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 42,
+    "text": "你喜欢什么样的工作",
+    "options": [
+        {"text": "有最后期限", "dimension": "J"},
+        {"text": "随时进行", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 43,
+    "text": "你是那种",
+    "options": [
+        {"text": "很健谈的人", "dimension": "E"},
+        {"text": "认真聆听的人", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 44,
+    "text": "你更容易接受",
+    "options": [
+        {"text": "较直白的语言", "dimension": "S"},
+        {"text": "较有寓意的语言", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 45,
+    "text": "你更经常注意的是",
+    "options": [
+        {"text": "恰好在眼前的事物", "dimension": "S"},
+        {"text": "想象中的事物", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 46,
+    "text": "成为哪一种人更糟糕",
+    "options": [
+        {"text": "过分心软", "dimension": "F"},
+        {"text": "顽固", "dimension": "T"}
+    ]
+    },
+    {
+    "id": 47,
+    "text": "在令人难堪的情况下，你有时表现得",
+    "options": [
+        {"text": "过于无动于衷", "dimension": "T"},
+        {"text": "过于同情怜悯", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 48,
+    "text": "你在做出选择时倾向于",
+    "options": [
+        {"text": "小心翼翼", "dimension": "J"},
+        {"text": "有些冲动", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 49,
+    "text": "你更喜欢",
+    "options": [
+        {"text": "紧张而不悠闲", "dimension": "J"},
+        {"text": "悠闲而不紧张", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 50,
+    "text": "工作中你倾向于",
+    "options": [
+        {"text": "热情与同事交往", "dimension": "E"},
+        {"text": "保留更多的私人空间", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 51,
+    "text": "你更容易相信",
+    "options": [
+        {"text": "你的经验", "dimension": "S"},
+        {"text": "你的观念", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 52,
+    "text": "你更愿意感受",
+    "options": [
+        {"text": "脚踏实地", "dimension": "S"},
+        {"text": "有些动荡", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 53,
+    "text": "你认为你自己更是一个",
+    "options": [
+        {"text": "意志坚强的人", "dimension": "T"},
+        {"text": "心地温和的人", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 54,
+    "text": "你对自己哪种品格评价更高",
+    "options": [
+        {"text": "通情达理", "dimension": "T"},
+        {"text": "埋头苦干", "dimension": "S"}
+    ]
+    },
+    {
+    "id": 55,
+    "text": "你通常希望事情",
+    "options": [
+        {"text": "已经被安排、确定", "dimension": "J"},
+        {"text": "只是暂时确定", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 56,
+    "text": "你认为自己更加",
+    "options": [
+        {"text": "严肃、坚定", "dimension": "T"},
+        {"text": "随和", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 57,
+    "text": "你觉得自己是个",
+    "options": [
+        {"text": "好的演说家", "dimension": "E"},
+        {"text": "好的聆听者", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 58,
+    "text": "你很满意自己能够",
+    "options": [
+        {"text": "有力地把握事实", "dimension": "S"},
+        {"text": "有丰富的想象力", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 59,
+    "text": "你更注重",
+    "options": [
+        {"text": "基本原理", "dimension": "S"},
+        {"text": "深层寓意", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 60,
+    "text": "什么错误看起来比较严重",
+    "options": [
+        {"text": "同情心过于丰富", "dimension": "F"},
+        {"text": "过于冷漠", "dimension": "T"}
+    ]
+    },
+    {
+    "id": 61,
+    "text": "你更容易受什么影响",
+    "options": [
+        {"text": "有说服力的证据", "dimension": "T"},
+        {"text": "令人感动的陈述", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 62,
+    "text": "哪一种情况下你的感觉更好",
+    "options": [
+        {"text": "结束一件事", "dimension": "J"},
+        {"text": "保留各种选择", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 63,
+    "text": "较令人满意的是",
+    "options": [
+        {"text": "确定事情已经做好", "dimension": "J"},
+        {"text": "只是顺其自然", "dimension": "P"}
+    ]
+    },
+    {
+    "id": 64,
+    "text": "你是一个",
+    "options": [
+        {"text": "容易接近的人", "dimension": "E"},
+        {"text": "有些矜持的人", "dimension": "I"}
+    ]
+    },
+    {
+    "id": 65,
+    "text": "你喜欢什么样的故事",
+    "options": [
+        {"text": "刺激和冒险的", "dimension": "S"},
+        {"text": "幻想和豪勇的", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 66,
+    "text": "什么事对你来说更容易",
+    "options": [
+        {"text": "使他人各尽其用", "dimension": "T"},
+        {"text": "认同他人", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 67,
+    "text": "你更希望自己具备",
+    "options": [
+        {"text": "意志的力量", "dimension": "T"},
+        {"text": "情感的力量", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 68,
+    "text": "你认为自己基本上",
+    "options": [
+        {"text": "禁得住批评和侮辱", "dimension": "T"},
+        {"text": "禁不住批评和侮辱", "dimension": "F"}
+    ]
+    },
+    {
+    "id": 69,
+    "text": "你常常注意到的是",
+    "options": [
+        {"text": "混乱", "dimension": "S"},
+        {"text": "变革的机会", "dimension": "N"}
+    ]
+    },
+    {
+    "id": 70,
+    "text": "你更倾向于",
+    "options": [
+        {"text": "按部就班完成工作", "dimension": "J"},
+        {"text": "灵活调整计划", "dimension": "P"}
+    ]
+    }
+]

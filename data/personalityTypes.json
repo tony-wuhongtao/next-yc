@@ -1,0 +1,121 @@
+[
+
+    {
+      "type": "INTJ",
+      "name": "建筑师",
+      "description": "富有想象力和战略性的思想家，具有强大的分析能力和创造力",
+      "color": "text-blue-500",
+      "image": "/images/avatars/intj-architect.svg"
+    },
+    {
+      "type": "INTP",
+      "name": "逻辑学家",
+      "description": "创新发明家，对知识有着永不满足的渴望",
+      "color": "text-blue-500",
+      "image": "/images/avatars/intp-logician.svg"
+    },
+    {
+      "type": "ENTJ",
+      "name": "指挥官",
+      "description": "大胆的领导者，善于制定战略计划和组织资源",
+      "color": "text-blue-500",
+      "image": "/images/avatars/entj-commander.svg"
+    },
+    {
+      "type": "ENTP",
+      "name": "辩论家",
+      "description": "聪明好奇的思想者，善于发现可能性",
+      "color": "text-blue-500",
+      "image": "/images/avatars/entp-debater.svg"
+    },
+
+
+    {
+      "type": "INFJ",
+      "name": "提倡者",
+      "description": "理想主义的组织者，致力于实现共同利益",
+      "color": "text-green-500",
+      "image": "/images/avatars/infj-advocate.svg"
+    },
+    {
+      "type": "INFP",
+      "name": "调停者",
+      "description": "诗意善良的理想主义者，总想做好事",
+      "color": "text-green-500",
+      "image": "/images/avatars/infp-mediator.svg"
+    },
+    {
+      "type": "ENFJ",
+      "name": "主人公",
+      "description": "富有魅力的领导者，善于激励他人",
+      "color": "text-green-500",
+      "image": "/images/avatars/enfj-protagonist.svg"
+    },
+    {
+      "type": "ENFP",
+      "name": "竞选者",
+      "description": "热情洋溢的沟通者，充满自由精神",
+      "color": "text-green-500",
+      "image": "/images/avatars/enfp-campaigner.svg"
+    },
+
+
+    {
+      "type": "ISTJ",
+      "name": "物流师",
+      "description": "务实可靠的组织者，善于创建秩序",
+      "color": "text-yellow-500",
+      "image": "/images/avatars/istj-logistician.svg"
+    },
+    {
+      "type": "ISFJ",
+      "name": "守卫者",
+      "description": "专注奉献的保护者，时刻准备守护所爱之人",
+      "color": "text-yellow-500",
+      "image": "/images/avatars/isfj-defender.svg"
+    },
+    {
+      "type": "ESTJ",
+      "name": "总经理",
+      "description": "卓越的管理者，善于组织事务和人员",
+      "color": "text-yellow-500",
+      "image": "/images/avatars/estj-executive.svg"
+    },
+    {
+      "type": "ESFJ",
+      "name": "执政官",
+      "description": "热情周到的组织者，善于联结人群",
+      "color": "text-yellow-500",
+      "image": "/images/avatars/esfj-consul.svg"
+    },
+
+
+    {
+      "type": "ISTP",
+      "name": "鉴赏家",
+      "description": "大胆务实的实验者，擅长使用工具解决问题",
+      "color": "text-orange-500",
+      "image": "/images/avatars/istp-virtuoso.svg"
+    },
+    {
+      "type": "ISFP",
+      "name": "冒险家",
+      "description": "灵活迷人的艺术家，活在当下享受生活",
+      "color": "text-orange-500",
+      "image": "/images/avatars/isfp-adventurer.svg"
+    },
+    {
+      "type": "ESTP",
+      "name": "企业家",
+      "description": "聪明活跃的实干家，享受冒险和行动",
+      "color": "text-orange-500",
+      "image": "/images/avatars/estp-entrepreneur.svg"
+    },
+    {
+      "type": "ESFP",
+      "name": "表演者",
+      "description": "热情洋溢的娱乐家，天生享受聚光灯",
+      "color": "text-orange-500",
+      "image": "/images/avatars/esfp-entertainer.svg"
+    }
+  ]
