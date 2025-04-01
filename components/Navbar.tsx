@@ -8,7 +8,7 @@ function Navbar() {
     { href: "/", label: "首页" },
     { href: "/MBTI", label: "MBTI测试" },
     { href: "/pollinations/image", label: "AI文生图" },
-    { href: "/pollinations/cn2en", label: "AI中英互译" },
+    // { href: "/pollinations/cn2en", label: "AI中英互译" },
   ];
   const pathname = usePathname();
   return (
@@ -64,9 +64,9 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn" href="/">
+        <Link href="/" className="btn">
           首页
-        </a>
+        </Link>
       </div>
     </div>
   );

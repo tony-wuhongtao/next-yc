@@ -8,7 +8,7 @@ const testData = [
     title: "MBTI 48题测试版",
     description: "48道选择题，二选一，轻松测试你的人格类型",
     buttonText: "开始测试",
-    buttonLink: "/MBTI/Test_48",
+    buttonLink: "/MBTI/Test?questionCount=48",
   },
   {
     imageUrl: "/images/testImg02.jpg",
@@ -16,7 +16,7 @@ const testData = [
     title: "MBTI 70题测试版",
     description: "70道选择题，更全面的测试你的人格类型",
     buttonText: "开始测试",
-    buttonLink: "/MBTI/Test_70",
+    buttonLink: "/MBTI/Test?questionCount=70",
   },
   {
     imageUrl: "/images/testImg03.jpg",
@@ -24,7 +24,7 @@ const testData = [
     title: "MBTI 93题测试版",
     description: "93道选择题，超详细的测试你的人格类型",
     buttonText: "开始测试",
-    buttonLink: "/MBTI/Test_93",
+    buttonLink: "/MBTI/Test?questionCount=93",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function Home() {
               <div className="card-body items-center text-center">
                 <h2 className="card-title">4大维度,16种人格类型</h2>
                 <ul>
-                  <li>外向—内向 (E—I)</li>
+                  <li>内向—外向 (I-E)</li>
                   <li>感觉—直觉 (S—N)</li>
                   <li>思维—情感 (T—F)</li>
                   <li>判断—知觉 (J—P)</li>

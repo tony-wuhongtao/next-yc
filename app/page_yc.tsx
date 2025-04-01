@@ -49,7 +49,7 @@ export default function Home() {
       );
     });
 
-    const handlePointerMove = (e) => {
+    const handlePointerMove = (e: PointerEvent) => {
       tl.pause();
       tl2.pause();
       gsap.to([tl, tl2], {

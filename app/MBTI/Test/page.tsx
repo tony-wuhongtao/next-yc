@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 type Question = {
   id: number;
@@ -13,6 +14,9 @@ type Answer = {
 };
 
 export default function MBTITest() {
+  const searchParams = useSearchParams();
+  const questionCount = searchParams.get("questionCount");
+
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>([]);
@@ -27,21 +31,44 @@ export default function MBTITest() {
     P: 0,
   });
 
-  // 从API获取题目并随机排序
+  const [error, setError] = useState<string | null>(null);
+
   useEffect(() => {
     const fetchQuestions = async () => {
-      const response = await fetch("/api/mbtiTest70");
-      const data = await response.json();
-      const shuffledQuestions = data.sort(() => Math.random() - 0.5);
-      setQuestions(shuffledQuestions);
+      if (!questionCount) return;
+
+      try {
+        const response = await fetch(`/api/mbtiTest?type=${questionCount}`);
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch questions: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+
+        if (data.length !== parseInt(questionCount)) {
+          throw new Error(
+            `Received ${data.length} questions, expected ${questionCount}`
+          );
+        }
+
+        const shuffledQuestions = data.sort(() => Math.random() - 0.5);
+        setQuestions(shuffledQuestions);
+        setError(null);
+      } catch (err) {
+        console.error(err);
+        setError(
+          err instanceof Error ? err.message : "Failed to load questions"
+        );
+      }
     };
     fetchQuestions();
-  }, []);
+  }, [questionCount]);
 
   // 初始化时打印初始得分
   useEffect(() => {
     console.log("Initial scores:", scores);
-  }, []);
+  }, [scores]); // 添加 scores 作为依赖
 
   const handleOptionClick = (
     questionId: number,
@@ -64,13 +91,15 @@ export default function MBTITest() {
           const prevOption = currentQuestion.options.find(
             (opt) => opt.text === existingAnswer.selectedOption
           );
-          if (prevOption) {
-            newScores[prevOption.dimension] -= 1;
+          if (prevOption && prevOption.dimension in newScores) {
+            newScores[prevOption.dimension as keyof typeof newScores] -= 1;
           }
         }
       }
 
-      newScores[dimension] += 1;
+      if (dimension in newScores) {
+        newScores[dimension as keyof typeof newScores] += 1;
+      }
       console.log("Current scores:", newScores);
       return newScores;
     });
@@ -88,14 +117,44 @@ export default function MBTITest() {
   };
 
   const calculateResult = () => {
-    console.log("Final scores:", scores);
-    // 这里可以添加显示结果的逻辑
+    // 计算最终类型
+    const type = [
+      scores.I > scores.E ? "I" : "E",
+      scores.S > scores.N ? "S" : "N",
+      scores.T > scores.F ? "T" : "F",
+      scores.J > scores.P ? "J" : "P",
+    ].join("");
+
+    // 跳转到结果页面并传递参数
+    const queryParams = new URLSearchParams({
+      type,
+      E: scores.E.toString(),
+      I: scores.I.toString(),
+      S: scores.S.toString(),
+      N: scores.N.toString(),
+      T: scores.T.toString(),
+      F: scores.F.toString(),
+      J: scores.J.toString(),
+      P: scores.P.toString(),
+    });
+
+    window.location.href = `/MBTI/TestResult?${queryParams.toString()}`;
   };
 
   const currentQuestion = questions[currentQuestionIndex];
   const currentAnswer = answers.find(
     (a) => a.questionId === currentQuestion?.id
   );
+
+  if (error) {
+    return (
+      <div className="flex items-center justify-center min-h-screen overflow-hidden">
+        <div className="alert alert-error max-w-md">
+          <span>{error}</span>
+        </div>
+      </div>
+    );
+  }
 
   if (!questions.length)
     return (

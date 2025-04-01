@@ -1,0 +1,386 @@
+[
+    {
+      "id": 1,
+      "text": "会议中你更倾向于：",
+      "options": [
+        {"text": "主动提出观点", "dimension": "E"},
+        {"text": "先倾听再发言", "dimension": "I"}
+      ]
+    },
+    {
+      "id": 2,
+      "text": "你更擅长记住：",
+      "options": [
+        {"text": "具体事件细节", "dimension": "S"},
+        {"text": "抽象概念框架", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 3,
+      "text": "做决策时你更依赖：",
+      "options": [
+        {"text": "逻辑分析和客观数据", "dimension": "T"},
+        {"text": "个人价值观和情感需求", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 4,
+      "text": "你的生活节奏更倾向于：",
+      "options": [
+        {"text": "严格按计划执行", "dimension": "J"},
+        {"text": "灵活调整适应变化", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 5,
+      "text": "社交后你会感到：",
+      "options": [
+        {"text": "精力充沛", "dimension": "E"},
+        {"text": "需要独处恢复", "dimension": "I"}
+      ]
+    },
+    {
+      "id": 6,
+      "text": "你更关注事物的：",
+      "options": [
+        {"text": "实际应用价值", "dimension": "S"},
+        {"text": "潜在发展可能性", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 7,
+      "text": "评价他人时你更看重：",
+      "options": [
+        {"text": "能力与效率", "dimension": "T"},
+        {"text": "善良与真诚", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 8,
+      "text": "处理任务时你喜欢：",
+      "options": [
+        {"text": "提前规划步骤", "dimension": "J"},
+        {"text": "边做边调整", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 9,
+      "text": "遇到困难时你会：",
+      "options": [
+        {"text": "独自思考解决方案", "dimension": "I"},
+        {"text": "向他人寻求帮助", "dimension": "E"}
+      ]
+    },
+    {
+      "id": 10,
+      "text": "你解决问题时习惯：",
+      "options": [
+        {"text": "按经验步骤执行", "dimension": "S"},
+        {"text": "寻找创新方法", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 11,
+      "text": "你做选择时易受影响的是：",
+      "options": [
+        {"text": "客观数据", "dimension": "T"},
+        {"text": "主观情感", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 12,
+      "text": "你应对压力时：",
+      "options": [
+        {"text": "制定应急计划", "dimension": "J"},
+        {"text": "灵活调整方案", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 13,
+      "text": "你更喜欢的学习方式是：",
+      "options": [
+        {"text": "实践操作", "dimension": "S"},
+        {"text": "理论推导", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 14,
+      "text": "你给他人反馈时会：",
+      "options": [
+        {"text": "直接指出问题", "dimension": "T"},
+        {"text": "委婉表达建议", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 15,
+      "text": "你理想的工作环境是：",
+      "options": [
+        {"text": "结构化团队协作", "dimension": "J"},
+        {"text": "自由创新空间", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 16,
+      "text": "你表达爱意的方式是：",
+      "options": [
+        {"text": "实际行动支持", "dimension": "S"},
+        {"text": "浪漫语言表达", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 17,
+      "text": "你处理情感冲突时：",
+      "options": [
+        {"text": "理性分析原因", "dimension": "T"},
+        {"text": "感性安抚情绪", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 18,
+      "text": "你理想的约会形式是：",
+      "options": [
+        {"text": "精心策划的活动", "dimension": "J"},
+        {"text": "随性而为的体验", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 19,
+      "text": "你更擅长处理：",
+      "options": [
+        {"text": "具体任务", "dimension": "S"},
+        {"text": "抽象概念", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 20,
+      "text": "你做决策时更关注：",
+      "options": [
+        {"text": "短期影响", "dimension": "S"},
+        {"text": "长期后果", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 21,
+      "text": "你评价自己时更看重：",
+      "options": [
+        {"text": "逻辑一致性", "dimension": "T"},
+        {"text": "情感真实性", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 22,
+      "text": "你更喜欢的沟通方式是：",
+      "options": [
+        {"text": "直接明确", "dimension": "T"},
+        {"text": "委婉含蓄", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 23,
+      "text": "你处理突发情况时：",
+      "options": [
+        {"text": "保持冷静", "dimension": "T"},
+        {"text": "情绪波动", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 24,
+      "text": "你更喜欢的旅行方式是：",
+      "options": [
+        {"text": "按攻略游览", "dimension": "J"},
+        {"text": "随机探索", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 25,
+      "text": "你解决问题时倾向于：",
+      "options": [
+        {"text": "一步一步分析", "dimension": "S"},
+        {"text": "整体框架构建", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 26,
+      "text": "你做决定时容易：",
+      "options": [
+        {"text": "依赖数据", "dimension": "T"},
+        {"text": "依赖直觉", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 27,
+      "text": "你更喜欢的工作模式是：",
+      "options": [
+        {"text": "独立完成", "dimension": "I"},
+        {"text": "团队协作", "dimension": "E"}
+      ]
+    },
+    {
+      "id": 28,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "遵守规则", "dimension": "J"},
+        {"text": "打破常规", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 29,
+      "text": "你更关注他人的：",
+      "options": [
+        {"text": "行为表现", "dimension": "S"},
+        {"text": "潜在需求", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 30,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "理性思考", "dimension": "T"},
+        {"text": "感性判断", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 31,
+      "text": "你更喜欢的学习环境是：",
+      "options": [
+        {"text": "安静独处", "dimension": "I"},
+        {"text": "热闹互动", "dimension": "E"}
+      ]
+    },
+    {
+      "id": 32,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "计划未来", "dimension": "J"},
+        {"text": "享受当下", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 33,
+      "text": "你更擅长：",
+      "options": [
+        {"text": "细节处理", "dimension": "S"},
+        {"text": "战略规划", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 34,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "客观公正", "dimension": "T"},
+        {"text": "富有同情心", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 35,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "独立决策", "dimension": "I"},
+        {"text": "集体讨论", "dimension": "E"}
+      ]
+    },
+    {
+      "id": 36,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "有序生活", "dimension": "J"},
+        {"text": "自由随性", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 37,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "现实务实", "dimension": "S"},
+        {"text": "理想主义", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 38,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "理性沟通", "dimension": "T"},
+        {"text": "情感共鸣", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 39,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "内向自省", "dimension": "I"},
+        {"text": "外向社交", "dimension": "E"}
+      ]
+    },
+    {
+      "id": 40,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "结构化流程", "dimension": "J"},
+        {"text": "灵活性调整", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 41,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "具体事实", "dimension": "S"},
+        {"text": "抽象理论", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 42,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "逻辑判断", "dimension": "T"},
+        {"text": "情感驱动", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 43,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "独自工作", "dimension": "I"},
+        {"text": "团队合作", "dimension": "E"}
+      ]
+    },
+    {
+      "id": 44,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "严格遵守规则", "dimension": "J"},
+        {"text": "灵活应对变化", "dimension": "P"}
+      ]
+    },
+    {
+      "id": 45,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "注重细节", "dimension": "S"},
+        {"text": "把握全局", "dimension": "N"}
+      ]
+    },
+    {
+      "id": 46,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "理性决策", "dimension": "T"},
+        {"text": "情感决策", "dimension": "F"}
+      ]
+    },
+    {
+      "id": 47,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "安静环境", "dimension": "I"},
+        {"text": "热闹环境", "dimension": "E"}
+      ]
+    },
+    {
+      "id": 48,
+      "text": "你更倾向于：",
+      "options": [
+        {"text": "按计划行事", "dimension": "J"},
+        {"text": "即兴发挥", "dimension": "P"}
+      ]
+    }
+  ]

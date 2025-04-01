@@ -1,0 +1,746 @@
+[
+    {
+        "id": 1,
+        "text": "当你某日想去某个地方,你会?",
+        "options": [
+            {"text": "计划好将做的事情以及何时做", "dimension": "J"},
+            {"text": "什么都不想就去", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 2,
+        "text": "如果你是一位老师,你愿教?",
+        "options": [
+            {"text": "涉及事实的课程", "dimension": "S"},
+            {"text": "涉及理论的课程", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 3,
+        "text": "你通常是?",
+        "options": [
+            {"text": "一个善于交际的人", "dimension": "E"},
+            {"text": "安静缄默的人", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 4,
+        "text": "你喜欢?",
+        "options": [
+            {"text": "事先安排好约会，聚会等", "dimension": "J"},
+            {"text": "只要时机恰当就无拘无束地做任何有趣的事", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 5,
+        "text": "你通常和相处得更好?",
+        "options": [
+            {"text": "现实的人", "dimension": "S"},
+            {"text": "想象力丰富的人", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 6,
+        "text": "当你和一群人在一起时，你会?",
+        "options": [
+            {"text": "参加大家的谈话", "dimension": "E"},
+            {"text": "只同你熟知的人单独谈话", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 7,
+        "text": "往往，你是?",
+        "options": [
+            {"text": "情感驾驭理智", "dimension": "F"},
+            {"text": "理智驾驭情感", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 8,
+        "text": "你更喜欢做多数事情?",
+        "options": [
+            {"text": "有计划地", "dimension": "J"},
+            {"text": "即兴时", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 9,
+        "text": "你愿意自己被认为是一个",
+        "options": [
+            {"text": "善于动手的人", "dimension": "S"},
+            {"text": "善于创意的人", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 10,
+        "text": "在大群体中，你常更多地",
+        "options": [
+            {"text": "介绍他人", "dimension": "E"},
+            {"text": "由别人来介绍你", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 11,
+        "text": "按日程表办事?",
+        "options": [
+            {"text": "正合你意", "dimension": "J"},
+            {"text": "束缚了你", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 12,
+        "text": "你更喜欢?",
+        "options": [
+            {"text": "务实且有丰富常识的人", "dimension": "S"},
+            {"text": "头脑灵活的人", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 13,
+        "text": "你觉得通常别人要花费?",
+        "options": [
+            {"text": "一小段时间来了解你", "dimension": "E"},
+            {"text": "很久来了解你", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 14,
+        "text": "被称为是更高的赞赏?",
+        "options": [
+            {"text": "感性的人", "dimension": "F"},
+            {"text": "一贯理性的人", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 15,
+        "text": "对于制定周末计划，你觉得?",
+        "options": [
+            {"text": "很有必要", "dimension": "J"},
+            {"text": "没必要", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 16,
+        "text": "你愿把作为朋友?",
+        "options": [
+            {"text": "脚踏实地的人", "dimension": "S"},
+            {"text": "常有新观点的人", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 17,
+        "text": "多数时候，你倾向于?",
+        "options": [
+            {"text": "同他人在一起", "dimension": "E"},
+            {"text": "独处", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 18,
+        "text": "日常工作中，你喜欢?",
+        "options": [
+            {"text": "通常先安排好工作并加以完成,以免压力过大", "dimension": "J"},
+            {"text": "在时间紧迫的情况下争分夺秒地工作", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 19,
+        "text": "当你为了消遣而阅读时，你?",
+        "options": [
+            {"text": "喜欢作者确切地表达其意思", "dimension": "S"},
+            {"text": "欣赏奇特新颖的表达方式", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 20,
+        "text": "你能否?",
+        "options": [
+            {"text": "只要愿意就能轻松地同几乎任何人说个没完", "dimension": "E"},
+            {"text": "只能在特定场合下或同特定的人才愿意讲许多话", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 21,
+        "text": "你更倾向于?",
+        "options": [
+            {"text": "感性地做事", "dimension": "F"},
+            {"text": "依逻辑行事", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 22,
+        "text": "当有一项特殊工作时，你会",
+        "options": [
+            {"text": "在开始前精心组织策划", "dimension": "J"},
+            {"text": "在工作进行中找出必要环节", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 23,
+        "text": "做很多人都会做的事情时，你喜欢?",
+        "options": [
+            {"text": "按惯例做", "dimension": "S"},
+            {"text": "按自己独创的方式做", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 24,
+        "text": "你新认识的人说出你的兴趣所在?",
+        "options": [
+            {"text": "马上就能", "dimension": "E"},
+            {"text": "只有当他们真正了解你之后才能", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 25,
+        "text": "在计划一次旅行时，你更喜欢?",
+        "options": [
+            {"text": "事先就知道在大部分日子所将做的事情", "dimension": "J"},
+            {"text": "在多数情况下随心所欲地行事", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 26,
+        "text": "多数人认为你?",
+        "options": [
+            {"text": "非常坦率", "dimension": "E"},
+            {"text": "不太把自己的事情告诉别人", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 27,
+        "text": "在以下各对词中，你更倾向于哪一个？A.事实 B.观点",
+        "options": [
+            {"text": "事实", "dimension": "S"},
+            {"text": "观点", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 28,
+        "text": "在以下各对词中，你更倾向于哪一个？A.热忱 B.坚决",
+        "options": [
+            {"text": "热忱", "dimension": "F"},
+            {"text": "坚决", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 29,
+        "text": "在以下各对词中，你更倾向于哪一个？A.切实 B.创新",
+        "options": [
+            {"text": "切实", "dimension": "S"},
+            {"text": "创新", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 30,
+        "text": "在以下各对词中，你更倾向于哪一个？A.有计划 B.随意",
+        "options": [
+            {"text": "有计划", "dimension": "J"},
+            {"text": "随意", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 31,
+        "text": "在以下各对词中，你更倾向于哪一个？A.实在 B.抽象",
+        "options": [
+            {"text": "实在", "dimension": "S"},
+            {"text": "抽象", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 32,
+        "text": "在以下各对词中，你更倾向于哪一个？A.感觉 B.思考",
+        "options": [
+            {"text": "感觉", "dimension": "F"},
+            {"text": "思考", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 33,
+        "text": "在以下各对词中，你更倾向于哪一个？A.已知的 B.新颖的",
+        "options": [
+            {"text": "已知的", "dimension": "S"},
+            {"text": "新颖的", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 34,
+        "text": "在以下各对词中，你更倾向于哪一个？A.感性 B.理性",
+        "options": [
+            {"text": "感性", "dimension": "F"},
+            {"text": "理性", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 35,
+        "text": "在以下各对词中，你更倾向于哪一个？A.安排好的 B.不受限制的",
+        "options": [
+            {"text": "安排好的", "dimension": "J"},
+            {"text": "不受限制的", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 36,
+        "text": "在以下各对词中，你更倾向于哪一个？A.热情 B.安静",
+        "options": [
+            {"text": "热情", "dimension": "E"},
+            {"text": "安静", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 37,
+        "text": "在以下各对词中，你更倾向于哪一个？A.温柔 B.坚硬",
+        "options": [
+            {"text": "温柔", "dimension": "F"},
+            {"text": "坚硬", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 38,
+        "text": "在以下各对词中，你更倾向于哪一个？A.陈述 B.观念",
+        "options": [
+            {"text": "陈述", "dimension": "S"},
+            {"text": "观念", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 39,
+        "text": "在以下各对词中，你更倾向于哪一个？A.慈悲心肠 B.意志坚强",
+        "options": [
+            {"text": "慈悲心肠", "dimension": "F"},
+            {"text": "意志坚强", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 40,
+        "text": "在以下各对词中，你更倾向于哪一个？A.事实的 B.理论的",
+        "options": [
+            {"text": "事实的", "dimension": "S"},
+            {"text": "理论的", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 41,
+        "text": "在以下各对词中，你更倾向于哪一个？A.很多朋友 B.少许朋友",
+        "options": [
+            {"text": "很多朋友", "dimension": "E"},
+            {"text": "少许朋友", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 42,
+        "text": "在以下各对词中，你更倾向于哪一个？A.系统的 B.自发的",
+        "options": [
+            {"text": "系统的", "dimension": "J"},
+            {"text": "自发的", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 43,
+        "text": "在以下各对词中，你更倾向于哪一个？A.确定 B.推测",
+        "options": [
+            {"text": "确定", "dimension": "S"},
+            {"text": "推测", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 44,
+        "text": "在以下各对词中，你更倾向于哪一个？A.宽容 B.坚定",
+        "options": [
+            {"text": "宽容", "dimension": "F"},
+            {"text": "坚定", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 45,
+        "text": "在以下各对词中，你更倾向于哪一个？A.必然性 B.可能性",
+        "options": [
+            {"text": "必然性", "dimension": "S"},
+            {"text": "可能性", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 46,
+        "text": "在以下各对词中，你更倾向于哪一个？A.动之以情 B.晓之以理",
+        "options": [
+            {"text": "动之以情", "dimension": "F"},
+            {"text": "晓之以理", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 47,
+        "text": "在以下各对词中，你更倾向于哪一个？A.健谈 B.缄默",
+        "options": [
+            {"text": "健谈", "dimension": "E"},
+            {"text": "缄默", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 48,
+        "text": "在以下各对词中，你更倾向于哪一个？A.温和 B.力量",
+        "options": [
+            {"text": "温和", "dimension": "F"},
+            {"text": "力量", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 49,
+        "text": "在以下各对词中，你更倾向于哪一个？A.现实 B.理想",
+        "options": [
+            {"text": "现实", "dimension": "S"},
+            {"text": "理想", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 50,
+        "text": "在以下各对词中，你更倾向于哪一个？A.好心的 B.称职的",
+        "options": [
+            {"text": "好心的", "dimension": "F"},
+            {"text": "称职的", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 51,
+        "text": "在以下各对词中，你更倾向于哪一个？A.事实 B.理论",
+        "options": [
+            {"text": "事实", "dimension": "S"},
+            {"text": "理论", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 52,
+        "text": "在以下各对词中，你更倾向于哪一个？A.系统 B.随机",
+        "options": [
+            {"text": "系统", "dimension": "J"},
+            {"text": "随机", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 53,
+        "text": "在以下各对词中，你更倾向于哪一个？A.现实的 B.想象的",
+        "options": [
+            {"text": "现实的", "dimension": "S"},
+            {"text": "想象的", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 54,
+        "text": "在以下各对词中，你更倾向于哪一个？A.易动情的 B.客观的",
+        "options": [
+            {"text": "易动情的", "dimension": "F"},
+            {"text": "客观的", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 55,
+        "text": "在以下各对词中，你更倾向于哪一个？A.建造 B.发明",
+        "options": [
+            {"text": "建造", "dimension": "S"},
+            {"text": "发明", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 56,
+        "text": "在以下各对词中，你更倾向于哪一个？A.感情丰富的 B.注重实际的",
+        "options": [
+            {"text": "感情丰富的", "dimension": "F"},
+            {"text": "注重实际的", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 57,
+        "text": "在以下各对词中，你更倾向于哪一个？A.有序的 B.随便的",
+        "options": [
+            {"text": "有序的", "dimension": "J"},
+            {"text": "随便的", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 58,
+        "text": "在以下各对词中，你更倾向于哪一个？A.开朗 B.文静",
+        "options": [
+            {"text": "开朗", "dimension": "E"},
+            {"text": "文静", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 59,
+        "text": "在以下各对词中，你更倾向于哪一个？A.认同 B.分析",
+        "options": [
+            {"text": "认同", "dimension": "F"},
+            {"text": "分析", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 60,
+        "text": "在以下各对词中，你更倾向于哪一个？A.事实的 B.想象的",
+        "options": [
+            {"text": "事实的", "dimension": "S"},
+            {"text": "想象的", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 61,
+        "text": "在以下各对词中，你更倾向于哪一个？A.祝福 B.利益",
+        "options": [
+            {"text": "祝福", "dimension": "F"},
+            {"text": "利益", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 62,
+        "text": "在以下各对词中，你更倾向于哪一个？A.详实 B.概括",
+        "options": [
+            {"text": "详实", "dimension": "S"},
+            {"text": "概括", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 63,
+        "text": "在以下各对词中，你更倾向于哪一个？A.决定 B.冲动",
+        "options": [
+            {"text": "决定", "dimension": "J"},
+            {"text": "冲动", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 64,
+        "text": "在以下各对词中，你更倾向于哪一个？A.制作 B.创造",
+        "options": [
+            {"text": "制作", "dimension": "S"},
+            {"text": "创造", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 65,
+        "text": "在以下各对词中，你更倾向于哪一个？A.热情 B.客观",
+        "options": [
+            {"text": "热情", "dimension": "F"},
+            {"text": "客观", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 66,
+        "text": "在以下各对词中，你更倾向于哪一个？A.实用的 B.迷人的",
+        "options": [
+            {"text": "实用的", "dimension": "S"},
+            {"text": "迷人的", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 67,
+        "text": "在以下各对词中，你更倾向于哪一个？A.体谅的 B.公正的",
+        "options": [
+            {"text": "体谅的", "dimension": "F"},
+            {"text": "公正的", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 68,
+        "text": "在以下各对词中，你更倾向于哪一个？A.爱交际 B.爱文静",
+        "options": [
+            {"text": "爱交际", "dimension": "E"},
+            {"text": "爱文静", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 69,
+        "text": "在以下各对词中，你更倾向于哪一个？A.敏感 B.合理",
+        "options": [
+            {"text": "敏感", "dimension": "F"},
+            {"text": "合理", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 70,
+        "text": "在以下各对词中，你更倾向于哪一个？A.制造 B.设计",
+        "options": [
+            {"text": "制造", "dimension": "S"},
+            {"text": "设计", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 71,
+        "text": "在以下各对词中，你更倾向于哪一个？A.有同情心 B.有逻辑头脑",
+        "options": [
+            {"text": "有同情心", "dimension": "F"},
+            {"text": "有逻辑头脑", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 72,
+        "text": "在以下各对词中，你更倾向于哪一个？A.公开的 B.私人的",
+        "options": [
+            {"text": "公开的", "dimension": "E"},
+            {"text": "私人的", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 73,
+        "text": "在以下各对词中，你更倾向于哪一个？A.同情怜悯 B.深谋远虑",
+        "options": [
+            {"text": "同情怜悯", "dimension": "F"},
+            {"text": "深谋远虑", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 74,
+        "text": "通常你更喜欢?",
+        "options": [
+            {"text": "提前安排好业余活动", "dimension": "J"},
+            {"text": "即兴地做事情", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 75,
+        "text": "你觉得被许多人围着?",
+        "options": [
+            {"text": "让你感到更有精神", "dimension": "E"},
+            {"text": "常让你精力衰竭", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 76,
+        "text": "多数情况下，你更喜欢?",
+        "options": [
+            {"text": "按日程表办事", "dimension": "J"},
+            {"text": "顺其自然", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 77,
+        "text": "在聚会中，你?",
+        "options": [
+            {"text": "总是玩得很开心", "dimension": "E"},
+            {"text": "有时觉得无趣", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 78,
+        "text": "作决定时，对于你来说更重要的是?",
+        "options": [
+            {"text": "考虑人们的感受和观点", "dimension": "F"},
+            {"text": "权衡事实", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 79,
+        "text": "你喜欢?",
+        "options": [
+            {"text": "事先很早就作好准备", "dimension": "J"},
+            {"text": "看清事态如何发展再作计划", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 80,
+        "text": "别人了解你?",
+        "options": [
+            {"text": "很容易", "dimension": "E"},
+            {"text": "很难", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 81,
+        "text": "你喜欢的处事方式是?",
+        "options": [
+            {"text": "坚持那些已经有效的方法", "dimension": "S"},
+            {"text": "分析哪些仍有错并挑战未解决的问题", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 82,
+        "text": "你觉得自己更偏向于是一个?",
+        "options": [
+            {"text": "有组织性的人", "dimension": "J"},
+            {"text": "自发性的人", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 83,
+        "text": "你?",
+        "options": [
+            {"text": "只要愿意,就能和几乎任何一个人谈个没完", "dimension": "E"},
+            {"text": "只同和自己有共同兴趣的人才能长时间的交谈", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 84,
+        "text": "你愿在一个_老板(老师)手下工作(学习)?",
+        "options": [
+            {"text": "脾气好，但前后不一致", "dimension": "P"},
+            {"text": "对人严厉,但有条理", "dimension": "J"}
+        ]
+    },
+    {
+        "id": 85,
+        "text": "你更喜欢按照做大多数事情?",
+        "options": [
+            {"text": "已定的日程表", "dimension": "J"},
+            {"text": "当天的感觉", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 86,
+        "text": "在聚会中，你?",
+        "options": [
+            {"text": "自己聊得多", "dimension": "E"},
+            {"text": "听别人聊得多", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 87,
+        "text": "通常，你更喜欢上涉及的课程?",
+        "options": [
+            {"text": "具体内容", "dimension": "S"},
+            {"text": "概念和原则", "dimension": "N"}
+        ]
+    },
+    {
+        "id": 88,
+        "text": "当你开始了一项必须在一周内完成的大项目时，你会",
+        "options": [
+            {"text": "花时间列出所要做的事情及其先后次序", "dimension": "J"},
+            {"text": "直接开始", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 89,
+        "text": "在社交场合中，你通常觉得?",
+        "options": [
+            {"text": "很容易同大多数人长时间谈话", "dimension": "E"},
+            {"text": "同某些人很难开展和维持长时间的谈话", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 90,
+        "text": "被称为是更高的赞赏?",
+        "options": [
+            {"text": "富有同情心", "dimension": "F"},
+            {"text": "有竞争力", "dimension": "T"}
+        ]
+    },
+    {
+        "id": 91,
+        "text": "你觉得按计划行事?",
+        "options": [
+            {"text": "多数时候是有帮助的、适宜的", "dimension": "J"},
+            {"text": "有时必要，便令人不爽", "dimension": "P"}
+        ]
+    },
+    {
+        "id": 92,
+        "text": "你通常?",
+        "options": [
+            {"text": "同大家打成一片", "dimension": "E"},
+            {"text": "倾向于独处", "dimension": "I"}
+        ]
+    },
+    {
+        "id": 93,
+        "text": "总的来说，要完成一项重大任务，你倾向于",
+        "options": [
+            {"text": "开始先确定每一个步骤", "dimension": "J"},
+            {"text": "边做边考虑必须完成的事", "dimension": "P"}
+        ]
+    }
+]

@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MBTI Pro",
-  description: "MBTI Personality Test",
+  title: "耀乘出品",
+  description: "耀乘出品，科技驱动商业增长",
 };
 
 export default function RootLayout({
