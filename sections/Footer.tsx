@@ -7,7 +7,7 @@ export function Footer() {
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} <br /> All right reserved by
-            👉耀乘科技
+            👉耀乘科技工作室
           </p>
 
           <div className="flex flex-row items-center gap-4">
