@@ -28,7 +28,7 @@ function MBTIResultContent() {
     type: searchParams.get("type"),
     image: `/images/character-imgs/${searchParams
       .get("type")
-      ?.toLowerCase()}.png`,
+      ?.toUpperCase()}.png`,
     dimensions: [
       {
         left: "I（内向）",
@@ -84,7 +84,7 @@ function MBTIResultContent() {
         name: testData.type || "", // 添加默认名称
         description: type || "未找到对应的性格描述",
         color: "#000000", // 添加默认颜色
-        image: `/images/character-imgs/${testData.type?.toLowerCase()}.png`, // 添加图片路径
+        image: `/images/character-imgs/${testData.type?.toUpperCase()}.png`, // 添加图片路径
       });
     };
 
