@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 type PersonalityType = {
   type: string;
@@ -11,6 +12,7 @@ type PersonalityType = {
 };
 
 function MBTIResultContent() {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const [personalityType, setPersonalityType] =
     useState<PersonalityType | null>(null);
@@ -91,6 +93,20 @@ function MBTIResultContent() {
     fetchPersonalityType();
   }, [testData.type]);
 
+  const handleDeepseekAnalysis = () => {
+    const params = new URLSearchParams({
+      I: searchParams.get("I") || "0",
+      E: searchParams.get("E") || "0",
+      S: searchParams.get("S") || "0",
+      N: searchParams.get("N") || "0",
+      T: searchParams.get("T") || "0",
+      F: searchParams.get("F") || "0",
+      J: searchParams.get("J") || "0",
+      P: searchParams.get("P") || "0",
+    });
+    router.push(`/llm?${params.toString()}`);
+  };
+
   return (
     <div className="min-h-screen bg-base-200 p-8">
       <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto">
@@ -141,6 +157,14 @@ function MBTIResultContent() {
           <div className="bg-blue-200/20 p-4 rounded-box">
             <div className="text-left text-gray-800 text-lg whitespace-pre-line">
               {testData.description}
+              {personalityType && (
+                <button
+                  onClick={handleDeepseekAnalysis}
+                  className="btn btn-primary w-full mt-8"
+                >
+                  让Deepseek帮我详细分析
+                </button>
+              )}
             </div>
           </div>
         </div>
