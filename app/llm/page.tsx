@@ -5,11 +5,16 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function LLMContent() {
-  const searchParams = useSearchParams();
+  const router = useRouter();
+  const [showReportForm, setShowReportForm] = useState(false);
+  const [name, setName] = useState("");
+  const [isGenerating, setIsGenerating] = useState(false);
   const [response, setResponse] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     const fetchAnalysis = async () => {
@@ -46,6 +51,60 @@ function LLMContent() {
 
     fetchAnalysis();
   }, [searchParams]);
+
+  const handleGenerateReport = async () => {
+    if (!name) {
+      alert("请输入姓名");
+      return;
+    }
+
+    // 计算IESNTFJP的总数
+    const totalScore =
+      Number(searchParams.get("I")) +
+      Number(searchParams.get("E")) +
+      Number(searchParams.get("S")) +
+      Number(searchParams.get("N")) +
+      Number(searchParams.get("T")) +
+      Number(searchParams.get("F")) +
+      Number(searchParams.get("J")) +
+      Number(searchParams.get("P"));
+
+    // 根据总数判断测试类型
+    let testType = "unknown";
+    if (totalScore === 48) testType = "48题版";
+    else if (totalScore === 70) testType = "70题版";
+    else if (totalScore === 93) testType = "93题版";
+
+    setIsGenerating(true);
+    try {
+      const res = await fetch("/api/report", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          testType,
+          I: Number(searchParams.get("I")),
+          E: Number(searchParams.get("E")),
+          S: Number(searchParams.get("S")),
+          N: Number(searchParams.get("N")),
+          T: Number(searchParams.get("T")),
+          F: Number(searchParams.get("F")),
+          J: Number(searchParams.get("J")),
+          P: Number(searchParams.get("P")),
+          content: response,
+        }),
+      });
+
+      const data = await res.json();
+      router.push(`/Report/${data.id}`);
+    } catch (error) {
+      console.error("生成报告失败:", error);
+    } finally {
+      setIsGenerating(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-base-200 p-8 relative overflow-hidden">
@@ -114,6 +173,36 @@ function LLMContent() {
           </div>
         )}
       </div>
+
+      {!isLoading && (
+        <div className="mt-8 text-center relative z-20">
+          {!showReportForm ? (
+            <button
+              onClick={() => setShowReportForm(true)}
+              className="btn btn-primary"
+            >
+              我要一份详细报告
+            </button>
+          ) : (
+            <div className="flex flex-col items-center gap-4">
+              <input
+                type="text"
+                placeholder="请输入您的姓名"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="input input-bordered w-full max-w-xs"
+              />
+              <button
+                onClick={handleGenerateReport}
+                className="btn btn-primary"
+                disabled={isGenerating}
+              >
+                {isGenerating ? "生成中..." : "生成报告"}
+              </button>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

@@ -38,6 +38,14 @@ function Hero() {
             >
               AI 文生图
             </button>
+            <button
+              className="btn btn-primary"
+              onClick={() => {
+                router.push("/Catmeows");
+              }}
+            >
+              喵语
+            </button>
           </div>
         </div>
       </div>

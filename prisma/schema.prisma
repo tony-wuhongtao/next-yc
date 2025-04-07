@@ -20,3 +20,19 @@ model log {
   client    String
   createdAt DateTime @default(now())
 }
+
+model Report {
+  id        String   @id @default(uuid())
+  name      String
+  testType  String
+  I         Int
+  E         Int
+  S         Int
+  N         Int
+  T         Int
+  F         Int
+  J         Int
+  P         Int
+  content   String
+  createdAt DateTime @default(now())
+}
