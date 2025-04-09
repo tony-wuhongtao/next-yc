@@ -42,3 +42,15 @@ model News {
   content   String
   createdAt DateTime @default(now())
 }
+
+model Pnews {
+  id        String   @id @default(uuid())
+  content   String
+  createdAt DateTime @default(now())
+}
+
+model Hnews {
+  id        String   @id @default(uuid())
+  content   String
+  createdAt DateTime @default(now())
+}

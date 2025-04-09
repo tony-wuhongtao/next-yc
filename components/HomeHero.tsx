@@ -52,7 +52,23 @@ function Hero() {
                 router.push("/News");
               }}
             >
-              AI推送每日新闻
+              AI推送-AI科技新闻
+            </button>
+            <button
+              className="btn btn-primary w-[calc(50%-12px)]"
+              onClick={() => {
+                router.push("/PN");
+              }}
+            >
+              AI推送-时政新闻
+            </button>
+            <button
+              className="btn btn-primary w-[calc(50%-12px)]"
+              onClick={() => {
+                router.push("/HN");
+              }}
+            >
+              AI推送-健康生活新闻
             </button>
           </div>
         </div>
