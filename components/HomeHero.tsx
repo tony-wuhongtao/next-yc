@@ -21,9 +21,9 @@ function Hero() {
             免费使用，无需注册，无需登录
             <br />
           </p>
-          <div className="flex flex-row items-baseline gap-6">
+          <div className="flex flex-row flex-wrap gap-6">
             <button
-              className="btn btn-primary"
+              className="btn btn-primary w-[calc(50%-12px)]" // 设置按钮宽度为 50% 减去间距
               onClick={() => {
                 router.push("/MBTI/");
               }}
@@ -31,7 +31,7 @@ function Hero() {
               MBTI 测试
             </button>
             <button
-              className="btn btn-primary"
+              className="btn btn-primary w-[calc(50%-12px)]"
               onClick={() => {
                 router.push("/pollinations/image");
               }}
@@ -39,12 +39,20 @@ function Hero() {
               AI 文生图
             </button>
             <button
-              className="btn btn-primary"
+              className="btn btn-primary w-[calc(50%-12px)]"
               onClick={() => {
                 router.push("/Catmeows");
               }}
             >
               喵语
+            </button>
+            <button
+              className="btn btn-primary w-[calc(50%-12px)]"
+              onClick={() => {
+                router.push("/News");
+              }}
+            >
+              AI推送每日新闻
             </button>
           </div>
         </div>

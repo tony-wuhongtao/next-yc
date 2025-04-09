@@ -9,6 +9,7 @@ function Navbar() {
     { href: "/MBTI", label: "MBTI测试" },
     { href: "/pollinations/image", label: "AI文生图" },
     { href: "/Catmeows", label: "喵语" },
+    { href: "/News", label: "AI推送每日新闻" },
     // { href: "/pollinations/cn2en", label: "AI中英互译" },
   ];
   const pathname = usePathname();
