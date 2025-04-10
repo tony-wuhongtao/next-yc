@@ -70,61 +70,42 @@ export default function MBTITest() {
     console.log("Initial scores:", scores);
   }, [scores]); // 添加 scores 作为依赖
 
-  const handleCircleClick = (
+  const handleOptionClick = (
     questionId: number,
-    dimensionA: string,
-    dimensionB: string,
-    weight: number
+    selectedOption: string,
+    dimension: string
   ) => {
     const existingAnswer = answers.find((a) => a.questionId === questionId);
-
-    // 如果点击的是同一个答案，直接跳到下一题
-    if (existingAnswer?.selectedOption === weight.toString()) {
-      if (currentQuestionIndex < questions.length - 1) {
-        setTimeout(() => {
-          setCurrentQuestionIndex((prev) => prev + 1);
-        }, 100);
-      }
-      return;
-    }
-
     const newAnswers = [
       ...answers.filter((a) => a.questionId !== questionId),
-      { questionId, selectedOption: weight.toString() },
+      { questionId, selectedOption },
     ];
     setAnswers(newAnswers);
 
     setScores((prev) => {
       const newScores = { ...prev };
 
-      // 清除原有答案的积分
       if (existingAnswer) {
-        const prevWeight = parseFloat(existingAnswer.selectedOption);
-        // 减去原有答案的积分
-        newScores[dimensionA as keyof typeof newScores] -= prevWeight;
-        newScores[dimensionB as keyof typeof newScores] -= 1 - prevWeight;
+        const currentQuestion = questions.find((q) => q.id === questionId);
+        if (currentQuestion) {
+          const prevOption = currentQuestion.options.find(
+            (opt) => opt.text === existingAnswer.selectedOption
+          );
+          if (prevOption && prevOption.dimension in newScores) {
+            newScores[prevOption.dimension as keyof typeof newScores] -= 1;
+          }
+        }
       }
 
-      // 计算新的分数
-      const scoreA = weight;
-      const scoreB = 1 - weight;
-
-      if (dimensionA in newScores) {
-        newScores[dimensionA as keyof typeof newScores] += scoreA;
+      if (dimension in newScores) {
+        newScores[dimension as keyof typeof newScores] += 1;
       }
-      if (dimensionB in newScores) {
-        newScores[dimensionB as keyof typeof newScores] += scoreB;
-      }
-
       console.log("Current scores:", newScores);
       return newScores;
     });
 
-    // 只有在不是最后一题时才进入下一题
     if (currentQuestionIndex < questions.length - 1) {
-      setTimeout(() => {
-        setCurrentQuestionIndex((prev) => prev + 1);
-      }, 100);
+      setCurrentQuestionIndex((prev) => prev + 1);
     }
   };
 
@@ -147,7 +128,7 @@ export default function MBTITest() {
     // 跳转到结果页面并传递参数
     const queryParams = new URLSearchParams({
       type,
-      E: scores.E.toString(), // 确保传递浮点数
+      E: scores.E.toString(),
       I: scores.I.toString(),
       S: scores.S.toString(),
       N: scores.N.toString(),
@@ -221,78 +202,28 @@ export default function MBTITest() {
         {/* 选项 */}
         <div className="grid gap-4">
           {currentQuestion.options.map((option, index) => (
-            <div
+            <button
               key={index}
-              className={`flex items-center justify-start text-lg h-16 transition-all p-4 rounded-lg
+              onClick={() =>
+                handleOptionClick(
+                  currentQuestion.id,
+                  option.text,
+                  option.dimension
+                )
+              }
+              className={`btn justify-start text-lg h-16 transition-all
                 ${
-                  index === 0
-                    ? "bg-green-100 text-green-800" // A选项绿色背景
-                    : "bg-purple-100 text-purple-800" // B选项紫色背景
+                  currentAnswer?.selectedOption === option.text
+                    ? "bg-green-600 text-white hover:bg-green-700"
+                    : "bg-green-50 text-green-800 hover:bg-green-100"
                 }`}
             >
-              <span className="w-8 h-8 rounded-full bg-white flex items-center justify-center mr-4">
+              <span className="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center mr-4">
                 {String.fromCharCode(65 + index)}
               </span>
               {option.text}
-            </div>
+            </button>
           ))}
-        </div>
-        {/* 圆形选择按钮 */}
-        <div className="flex items-center justify-between gap-4 md:gap-6 mt-8 mb-8 px-2">
-          <span className="text-green-600 font-bold text-3xl md:text-5xl">
-            A
-          </span>
-          <div className="flex items-center justify-center gap-3 md:gap-6 flex-1">
-            {[1, 0.75, 0.5, 0.25, 0].map((weight, index) => {
-              const isSelected =
-                currentAnswer?.selectedOption === weight.toString();
-              const isLeft = index < 2;
-              const isMiddle = index === 2;
-              const color = isMiddle ? "gray" : isLeft ? "green" : "purple";
-              const size =
-                index === 2 ? 32 : index === 1 || index === 3 ? 40 : 48;
-
-              return (
-                <button
-                  key={index}
-                  onClick={() =>
-                    handleCircleClick(
-                      currentQuestion.id,
-                      currentQuestion.options[0].dimension,
-                      currentQuestion.options[1].dimension,
-                      weight
-                    )
-                  }
-                  style={{
-                    width: size,
-                    height: size,
-                    borderWidth: 3,
-                    borderColor: isMiddle
-                      ? "#9CA3AF"
-                      : color === "green"
-                      ? "#16A34A"
-                      : "#9333EA",
-                    backgroundColor: isSelected
-                      ? color === "gray"
-                        ? "#9CA3AF"
-                        : color === "green"
-                        ? "#16A34A"
-                        : "#9333EA"
-                      : "#FFFFFF",
-                    transition: "background-color 0.3s ease",
-                    animation: isSelected ? "pulse 0.5s" : "none",
-                    cursor: "pointer",
-                    borderRadius: "9999px",
-                    flexShrink: 0,
-                  }}
-                  className="hover:bg-gray-100" // 使用Tailwind CSS实现悬停效果
-                ></button>
-              );
-            })}
-          </div>
-          <span className="text-purple-600 font-bold text-3xl md:text-5xl mx-2">
-            B
-          </span>
         </div>
 
         {/* 控制按钮 */}
@@ -306,7 +237,7 @@ export default function MBTITest() {
             </button>
           )}
           {currentQuestionIndex === questions.length - 1 &&
-            answers.some((a) => a.questionId === currentQuestion?.id) && (
+            answers.length === questions.length && (
               <button
                 onClick={calculateResult}
                 className="btn btn-primary w-full h-16 text-lg"

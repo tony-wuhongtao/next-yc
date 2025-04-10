@@ -25,14 +25,14 @@ model Report {
   id        String   @id @default(uuid())
   name      String
   testType  String
-  I         Int
-  E         Int
-  S         Int
-  N         Int
-  T         Int
-  F         Int
-  J         Int
-  P         Int
+  I         Float
+  E         Float
+  S         Float
+  N         Float
+  T         Float
+  F         Float
+  J         Float
+  P         Float
   content   String
   createdAt DateTime @default(now())
 }

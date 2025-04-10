@@ -20,11 +20,11 @@ const testData = [
   },
   {
     imageUrl: "/images/testImg03.jpg",
-    altText: "93题全面版",
-    title: "MBTI 93题全面版",
-    description: "93道选择题，超详细的测试你的人格类型",
+    altText: "95题全面升级版",
+    title: "MBTI 95题全面升级版",
+    description: "95道选择题，超详细的测试你的人格类型",
     buttonText: "开始测试",
-    buttonLink: "/MBTI/Test?questionCount=93",
+    buttonLink: "/MBTI/Test?questionCount=95",
   },
 ];
 

@@ -160,12 +160,12 @@
     ]
     },
     {
-    "id": 21,
-    "text": "你更经常提出",
-    "options": [
-        {"text": "最后、确定的意见", "dimension": "J"},
-        {"text": "暂、初步的意见", "dimension": "P"}
-    ]
+        "id": 21,
+        "text": "你更经常提出",
+        "options": [
+            {"text": "最后、确定的意见", "dimension": "J"},
+            {"text": "暂时、初步的意见", "dimension": "P"} 
+        ]
     },
     {
     "id": 22,
@@ -272,20 +272,20 @@
     ]
     },
     {
-    "id": 35,
-    "text": "在多数情况下，你更",
-    "options": [
-        {"text": "做作而不自然", "dimension": "E"},
-        {"text": "自然而不做作", "dimension": "I"}
-    ]
+        "id": 35,
+        "text": "在多数情况下，你更",
+        "options": [
+            {"text": "主动参与社交", "dimension": "E"},
+            {"text": "保持自然状态", "dimension": "I"}
+        ]
     },
     {
-    "id": 36,
-    "text": "你认为自己是一个",
-    "options": [
-        {"text": "外向的人", "dimension": "E"},
-        {"text": "自闭的人", "dimension": "I"}
-    ]
+        "id": 36,
+        "text": "你认为自己是一个",
+        "options": [
+            {"text": "外向的人", "dimension": "E"},
+            {"text": "内向的人", "dimension": "I"} 
+        ]
     },
     {
     "id": 37,
@@ -424,12 +424,12 @@
     ]
     },
     {
-    "id": 54,
-    "text": "你对自己哪种品格评价更高",
-    "options": [
-        {"text": "通情达理", "dimension": "T"},
-        {"text": "埋头苦干", "dimension": "S"}
-    ]
+        "id": 54,
+        "text": "你对自己哪种品格评价更高",
+        "options": [
+            {"text": "逻辑分析能力", "dimension": "T"}, 
+            {"text": "共情理解能力", "dimension": "F"}
+        ]
     },
     {
     "id": 55,
@@ -536,12 +536,12 @@
     ]
     },
     {
-    "id": 68,
-    "text": "你认为自己基本上",
-    "options": [
-        {"text": "禁得住批评和侮辱", "dimension": "T"},
-        {"text": "禁不住批评和侮辱", "dimension": "F"}
-    ]
+        "id": 68,
+        "text": "你认为自己基本上",
+        "options": [
+            {"text": "理性面对批评", "dimension": "T"},
+            {"text": "容易受批评影响", "dimension": "F"} 
+        ]
     },
     {
     "id": 69,

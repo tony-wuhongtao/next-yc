@@ -35,8 +35,8 @@ import remarkGfm from "remark-gfm";
 const getPercentage = (left, right) => {
   const total = left + right;
   return {
-    leftValue: Math.round((left / total) * 100),
-    rightValue: Math.round((right / total) * 100),
+    leftValue: parseFloat(((left / total) * 100).toFixed(2)),
+    rightValue: parseFloat(((right / total) * 100).toFixed(2)),
   };
 };
 
@@ -152,20 +152,24 @@ function ReportContent({ params }) {
   }
 
   // 计算测试题型
-  const calculateTestType = (report) => {
-    const totalScore =
-      report.I +
-      report.E +
-      report.S +
-      report.N +
-      report.T +
-      report.F +
-      report.J +
-      report.P;
-    if (totalScore === 48) return "48题版";
-    if (totalScore === 70) return "70题版";
-    if (totalScore === 93) return "93题版";
-    return "未知题型";
+const calculateTestType = (report) => {
+  const totalScore =
+    report.I +
+    report.E +
+    report.S +
+    report.N +
+    report.T +
+    report.F +
+    report.J +
+    report.P;
+  const roundedTotal = Math.round(totalScore);
+  console.log(roundedTotal);
+
+  // 根据总分判断测试类型
+  if (roundedTotal === 48) return "48题版";
+  if (roundedTotal === 70) return "70题版";
+  if (roundedTotal === 95) return "95题版";
+  return "未知题型";
   };
 
   const testType = report ? calculateTestType(report) : "";
