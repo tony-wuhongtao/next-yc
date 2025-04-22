@@ -54,3 +54,17 @@ model Hnews {
   content   String
   createdAt DateTime @default(now())
 }
+
+model Sdsreport {
+  id        String   @id @default(uuid())
+  name      String
+  R         String
+  I         String
+  A         String
+  S         String
+  E         String
+  C         String
+  q         String
+  content   String
+  createdAt DateTime @default(now())
+}

@@ -7,6 +7,7 @@ function Navbar() {
   const links = [
     { href: "/", label: "首页" },
     { href: "/MBTI", label: "MBTI测试" },
+    { href: "/SDS", label: "霍兰德职业兴趣能力测试" },
     { href: "/pollinations/image", label: "AI文生图" },
     { href: "/Catmeows", label: "喵语" },
     { href: "/News", label: "每日AI技术新闻" },

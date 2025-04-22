@@ -23,12 +23,20 @@ function Hero() {
           </p>
           <div className="flex flex-row flex-wrap gap-6">
             <button
-              className="btn btn-primary w-[calc(50%-12px)]" // 设置按钮宽度为 50% 减去间距
+              className="btn btn-primary w-[calc(50%-12px)]"
               onClick={() => {
                 router.push("/MBTI/");
               }}
             >
               MBTI 测试
+            </button>
+            <button
+              className="btn btn-primary w-[calc(50%-12px)]"
+              onClick={() => {
+                router.push("/SDS/");
+              }}
+            >
+              职业兴趣和能力 测试
             </button>
             <button
               className="btn btn-primary w-[calc(50%-12px)]"

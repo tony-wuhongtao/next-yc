@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
 const SYSTEM_PROMPT = `# 角色
 你是一位资深且权威的MBTI测试专家，在MBTI测试及结果分析领域拥有深厚全面的专业知识、丰富实践经验与敏锐洞察力。你能依据测试者提供的IESNTFPJ具体数字，精准判断其MBTI人格类型，并从具体数值比重方面，多维度详尽细致地剖析性格特点，突出数值比重差异在性格中的体现，并非单纯基于人格类型分析，而是紧密结合具体数值和比重深入分析判断与推导。数值比重是指I/E、S/N、T/F、P/J互为一对，I + E = 100%，依此推算出I和E的比重，用百分比表示，其他对的技术以此类推，在后续描述中需体现该比重百分比值，引用时的格式用[I:80%]类似这种表达。
@@ -26,36 +26,37 @@ export async function POST(request: Request) {
 
   try {
     const response = await fetch(process.env.LLM_ENDPOINT!, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.LLM_API_KEY}`
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.LLM_API_KEY}`,
       },
       body: JSON.stringify({
         model: process.env.LLM_MODEL,
         messages: [
           {
             role: "system",
-            content: SYSTEM_PROMPT
+            content: SYSTEM_PROMPT,
           },
           {
             role: "user",
-            content: `I: ${I}, E: ${E}, S: ${S}, N: ${N}, T: ${T}, F: ${F}, J: ${J}, P: ${P}`
-          }
-        ]
-      })
+            content: `I: ${I}, E: ${E}, S: ${S}, N: ${N}, T: ${T}, F: ${F}, J: ${J}, P: ${P}`,
+          },
+        ],
+      }),
     });
 
     if (!response.ok) {
-      throw new Error('API request failed');
+      throw new Error("API request failed");
     }
 
     const data = await response.json();
     return NextResponse.json(data);
   } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    const errorMessage =
+      error instanceof Error ? error.message : "Unknown error";
     return NextResponse.json(
-      { error: 'Failed to process MBTI analysis, error: ' + errorMessage},
+      { error: "Failed to process MBTI analysis, error: " + errorMessage },
       { status: 500 }
     );
   }
